@@ -8,8 +8,10 @@ import { Contact } from "./sections/Contact";
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <div className="bg-hero-custom">
         <Navbar />
         <Hero />
+      </div>
       <Project />
       <About />
       <Contact />

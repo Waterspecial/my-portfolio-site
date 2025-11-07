@@ -25,8 +25,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-custom {
-  background-image: url('/images/background.jpg');
+.bg-hero-custom {
+  background-image: url('/images/hero-section-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-hero-text-custom {
+  background-image: url('/images/hero-text-section.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-project-section-custom {
+  background-image: url('/images/bg-project-section.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
