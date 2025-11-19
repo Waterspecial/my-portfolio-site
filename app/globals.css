@@ -1,4 +1,13 @@
 @import "tailwindcss";
+@layer utilities {
+  .font-satoshi {
+    font-family: var(--font-satoshi), sans-serif;
+  }
+  .font-bricolage {
+    font-family: var(--font-bricolage), sans-serif;
+  }
+}
+
 
 :root {
   --background: #ffffff;
@@ -39,6 +48,12 @@ body {
 }
 .bg-project-section-custom {
   background-image: url('/images/bg-project-section.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-about-section-custom {
+  background-image: url('/images/about-section.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
