@@ -24,7 +24,7 @@ export default function ProjectCard({ imageSrc, title }: ProjectCardProps) {
 
       {/* Footer */}
       <div className="bg-black px-6 py-4 border-[1.5px] border-[#1a1a1a] rounded-b-[20px] w-full">
-        <h3 className="text-[#E6E6E6] text-sm font-medium bg-[#1F1F1F] border-[1.5px] bprder-[#666666] rounded-[20px] font-satoshi py-2 px-4 w-fit">
+        <h3 className="text-[#E6E6E6] text-sm font-medium bg-[#1F1F1F] border-[1.5px] border-[#666666] rounded-[20px] font-satoshi py-2 px-4 w-fit">
           {title}
         </h3>
       </div>

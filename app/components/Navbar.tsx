@@ -39,7 +39,6 @@ export const Navbar = () => {
 
       {/* Mobile Navigation Overlay */}
       <MobileNavigation open={open} closeMenu={closeMenu} />
-
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { satoshi, bricolage } from "./fonts"
+import { satoshi, tektur, oswald, caveat, impact } from "./fonts"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.variable} ${bricolage.variable} ${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${satoshi.variable} ${tektur.variable} ${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${caveat.variable} ${impact.variable} antialiased `}
       >
         {children}
       </body>
