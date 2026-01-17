@@ -33,7 +33,7 @@ export const Navbar = () => {
       <div className="hidden md:block">
         <ThemeToggle />
       </div>
-      <div className="" onClick={toggleMenu}>
+      <div className="lg:hidden" onClick={toggleMenu}>
         <HamburgerIcon />
       </div>
 

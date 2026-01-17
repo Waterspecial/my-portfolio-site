@@ -1,8 +1,8 @@
 import { ResumeIcon } from "../icons/ResumeIcon";
 import { GithubIcon } from "../icons/GithubIcon";
 import TwitterIcon from "../icons/TwitterIcon";
-import { BigLinkedin } from "../icons/BigLinkedin";
 import InstagramIcon from "../icons/InstagramIcon";
+import { LinkedinIcon } from "../icons/LinkedinIcon";
 
 export const Contact = () => {
   return (
@@ -12,7 +12,7 @@ export const Contact = () => {
 
       <div className="flex gap-8 py-6 items-center justify-center my-5">
         <ResumeIcon size="30" />
-        <BigLinkedin />
+        <LinkedinIcon size="30" />
         <GithubIcon size="30" />
         <TwitterIcon />
         <InstagramIcon />
