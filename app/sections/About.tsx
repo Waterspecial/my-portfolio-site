@@ -1,18 +1,18 @@
 import Image from 'next/image';
 import { GmailIcon } from '../icons/GmailIcon';
-import { BigLinkedin } from '../icons/BigLinkedin';
 import PersonalCard from '../components/about/PersonalCard';
 import Experience from '../components/about/Experience';
 import EducationCard from '../components/about/EducationCard';
 import TwitterIcon from '../icons/TwitterIcon';
 import InstagramIcon from '../icons/InstagramIcon';
+import { LinkedinIcon } from '../icons/LinkedinIcon';
 
 export const About = () => {
 
   return (
     <section id="about" className="bg-about">
-      <div className="px-6 py-8">
-        <h3 className="font-tektur font-semibold text-2xl text-[#E6E6E6] bg-[#000000] mb-8">
+      <div className="px-6 py-8 max-w-[1440px] mx-auto lg:px-[52px] lg:py-12">
+        <h3 className="font-tektur font-semibold text-2xl lg:text-[40px] text-[#E6E6E6] mb-8 lg:px-3">
           About me
         </h3>
 
@@ -32,7 +32,7 @@ export const About = () => {
           <div className="flex gap-8 items-center my-5">
             <InstagramIcon/>
             <TwitterIcon />
-            <BigLinkedin />
+            <LinkedinIcon size='30' />
             <GmailIcon />
           </div>
 
