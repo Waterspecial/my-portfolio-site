@@ -1,4 +1,4 @@
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/project/ProjectCard";
 
 export const Project = () => {
   const projectImages = [
@@ -21,7 +21,7 @@ export const Project = () => {
       alt: "Project 3",
     },
     {
-      id: 3,
+      id: 4,
       src: "/images/Project4.webp",
       title: "CUBACLE.VERCEL.APP",
       alt: "Project 4",
@@ -29,13 +29,13 @@ export const Project = () => {
   ];
 
   return (
-    <section id="project" className="bg-project-section-custom">
-      <div className="max-w-[1440px] mx-auto pb-8 lg:py-[100px] lg:px-[7.5%] ">
-        <h3 className="text-xl md:text-[30px] font-bricolage font-light py-8 px-6">
+    <section id="project" className="bg-project">
+      <div className="max-w-[1440px] mx-auto pb-8 lg:py-[100px] lg:px-[52px] ">
+        <h3 className="text-2xl lg:text-[40px] font-tektur font-light lg:font-medium py-8 px-6">
           Selected projects
         </h3>
 
-        <div className="px-6 space-y-5">
+        <div className="px-6 space-y-5 w-full lg:flex flex-wrap gap-6">
           {projectImages.map((projectImage) => (
             <ProjectCard
               key={projectImage.id}

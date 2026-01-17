@@ -3,8 +3,17 @@
   .font-satoshi {
     font-family: var(--font-satoshi), sans-serif;
   }
-  .font-bricolage {
-    font-family: var(--font-bricolage), sans-serif;
+  .font-impact {
+    font-family: var(--font-impact), sans-serif;
+  }
+  .font-tektur {
+    font-family: var(--font-tektur), sans-serif;
+  }
+  .font-oswald {
+    font-family: var(--font-oswald), sans-serif;
+  }
+  .font-caveat {
+    font-family: var(--font-caveat), sans-serif;
   }
 }
 
@@ -35,25 +44,31 @@ body {
 }
 
 .bg-hero-custom {
-  background-image: url('/images/hero-section-bg.webp');
+  background-image: url('/images/hero-section.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.bg-hero-text-custom {
-  background-image: url('/images/hero-text-section.webp');
+.bg-mobile-dropdown {
+  background-image: url('/images/mobile-dropdown.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.bg-project-section-custom {
-  background-image: url('/images/bg-project-section.webp');
+.bg-project {
+  background-image: url('/images/project-image.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.bg-about-section-custom {
-  background-image: url('/images/about-section.webp');
+.bg-about {
+  background-image: url('/images/about-image.webp');
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+.bg-footer {
+  background-image: url('/images/footer-image.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -13,9 +13,7 @@ export default function MobileNavigation({ open, closeMenu }: MobileMenuProps) {
   if (!open) return null;
 
   return (
-    <div className="absolute top-0 right-0 left-0 bg-black/90 bg-project-section-custom backdrop-blur-sm flex flex-col items-center 
-                    text-white text-xl z-40 font-satoshi">
-
+    <div className="absolute top-0 right-0 left-0 bg-black/90 bg-mobile-dropdown backdrop-blur-sm flex flex-col items-center  text-white text-xl z-40 font-satoshi">
       {/* Close button */}
       <div className="flex w-full justify-end">
         <div className="p-6" onClick={closeMenu}>
@@ -40,7 +38,11 @@ export default function MobileNavigation({ open, closeMenu }: MobileMenuProps) {
           <Link className="py-1 px-2.5" href="/resume.pdf" onClick={closeMenu}>
             RESUME
           </Link>
-          <Link className="py-1 px-2.5" href="https://linkedin.com" onClick={closeMenu}>
+          <Link
+            className="py-1 px-2.5"
+            href="https://linkedin.com"
+            onClick={closeMenu}
+          >
             LINKEDIN
           </Link>
         </div>

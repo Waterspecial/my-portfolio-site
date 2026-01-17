@@ -1,11 +1,23 @@
 import localFont from "next/font/local";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Tektur, Oswald, Caveat, } from "next/font/google";
 
-export const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+export const tektur = Tektur({
+  variable: "--font-tektur",
   subsets: ["latin"],
   display: "swap",
 });
+
+export const oswald = Oswald({
+  subsets: ["latin"],
+  variable: "--font-oswald",
+  display: "swap",
+});
+export const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
+});
+
 
 
 export const satoshi = localFont({
@@ -23,5 +35,13 @@ export const satoshi = localFont({
     { path: "../public/fonts/Satoshi/Satoshi-BlackItalic.woff2", weight: "900", style: "italic" },
   ],
   variable: "--font-satoshi",
+  display: "swap",
+});
+
+export const impact = localFont({
+  src: [
+    { path: "../public/fonts/impact/impact.woff", weight: "400", style: "normal" },
+  ],
+  variable: "--font-impact",
   display: "swap",
 });

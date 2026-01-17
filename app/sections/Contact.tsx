@@ -1,25 +1,26 @@
-import React from "react";
+import { ResumeIcon } from "../icons/ResumeIcon";
+import { GithubIcon } from "../icons/GithubIcon";
+import TwitterIcon from "../icons/TwitterIcon";
+import InstagramIcon from "../icons/InstagramIcon";
+import { LinkedinIcon } from "../icons/LinkedinIcon";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="bg-hero-custom font-satoshi">
-      <div className="px-6 py-7.5 text-[#E6E6E6]">
+    <section id="contact" className="bg-footer pt-[52px] font-satoshi">
 
-        <div className="bg-hero-text-custom space-y-6 py-15 flex flex-col text-center items-center border border-[#1A1A1A] rounded-[15px] shadow-[0px_4px_20px_0px_#333333]
-">
-          <p className="text-xl font-bricolage">
-            Reach out and let’s work
-          </p>
-          <div className="flex gap-6 items-center text-sm">
-            <p className="px-1 py-2.5">RESUME</p>
-            <p className="px-1 py-2.5">TWITTER</p>
-            <p className="px-1 py-2.5">INSTAGRAM</p>
-            <p className="px-1 py-2.5">LINKEDIN</p>
-          </div>
-          <h2 className="underline font-bricolage text-[28px]">omirinde@gmail.com</h2>
-          <p className="text-[#F2F2F2]">Copyright 2025, Omirinde</p>
-        </div>
+      <h1 className="text-[100px] text-[#F3F3F3] font-impact">reach out!</h1>
+
+      <div className="flex gap-8 py-6 items-center justify-center my-5">
+        <ResumeIcon size="30" />
+        <LinkedinIcon size="30" />
+        <GithubIcon size="30" />
+        <TwitterIcon />
+        <InstagramIcon />
       </div>
+      <h2 className="underline font-tektur text-[24px] text-center">
+        omirindeboluwatife@gmail.com
+      </h2>
+      <p className="text-[#E6E6E6] mt-[142px] p-6 text-end">Copyright 2025, Omirinde</p>
     </section>
   );
 };

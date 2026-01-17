@@ -1,40 +1,58 @@
 import React from "react";
-import { WavingEmoji } from "../icons/WavingEmoji";
+import { ReactIcon } from "../icons/ReactIcon";
+import { JsIcon } from "../icons/JsIcon";
+import { CssIcon } from "../icons/CssIcon";
+import { TsIcon } from "../icons/TsIocn";
+import { ResumeIcon } from "../icons/ResumeIcon";
+import { GithubIcon } from "../icons/GithubIcon";
+import { LinkedinIcon } from "../icons/LinkedinIcon";
 
 export const Hero = () => {
-  const skills = ["CSS", "JavaScript", "Next.js", "TypeScript"];
-
   return (
-    <div className="lg:max-w-[1440px] mx-auto px-6 mt-[55px] pb-[50px] md:mt-28 font-satoshi">
-      <div className="bg-hero-text-custom lg:max-w-[716px] mx-auto space-y-6 text-center py-10 px-4 md:py-[60px] flex flex-col items-center">
-        <p className="flex items-center">
-          <WavingEmoji />
-          <span className="text-[28px] md:text-[40px] text-[#e6e6e6] font-medium ml-3 font-bricolage">
-            <span className="font-light">hello,</span> I`m Omirinde
-          </span>
-        </p>
-        <p className="md:text-xl">
-          I bring pixels to life through thoughtful <br className="hidden md:block" /> code and intentional
-          design.
-        </p>
-        <div className="flex gap-6 items-center">
-          <p className="p-2.5 text-sm md:text-xl text-[#E6E6E6] font-normal">EMAIL</p>
-          <p className="p-2.5 text-sm md:text-xl text-[#E6E6E6] font-normal">LINKEDIN</p>
-          <p className="p-2.5 text-sm md:text-xl text-[#E6E6E6] font-normal">GITHUB</p>
+    <div className="font-satoshi mx-auto px-6 lg:px-10 pb-9 mt-8 lg:max-w-[1440px] lg:mt-[66px] lg:pb-[157px] lg:flex">
+      
+      <div className="lg:pl-12">
+        <h3 className="text-[64px] lg:text-[190px] leading-[120%] font-oswald text-[#FAFAFA]">
+          FRONTEND <br /> DEVELOPER
+        </h3>
+
+        <div className="flex gap-4 lg:hidden">
+          <ReactIcon  />
+          <JsIcon  />
+          <CssIcon  />
+          <TsIcon  />
+        </div>
+        <div className="hidden lg:flex gap-4 lg:gap-6 py-3">
+          <ReactIcon size="40" />
+          <JsIcon size="40" />
+          <CssIcon size="40" />
+          <TsIcon size="40" />
         </div>
       </div>
-      <div className="flex items-center gap-6 mt-6 flex-wrap font-bricolage">
-        {skills.map((skill, i) => {
-          return (
-            <div
-              key={i}
-              className="border-[1.5px] border-[#575757] rounded-[20px] py-1.5 px-6 md:py-3 md:px-9 w-fit text-sm font-medium"
-            >
-              {skill}
-            </div>
-          );
-        })}
+
+      <div className="flex justify-end w-full">
+        <div className="py-2.5 lg:py-10 lg:pr-6">
+          <p className="font-caveat text-[24px] leading-[140%] font-bold text-[#B3B3B3] lg:hidden">
+            CRAFTING <span className="text-[#FAFAFA]">EXPERIENCES</span> <br />{" "}
+            THAT CONVERT <span className="text-[#FAFAFA]">BUSINESSES</span>
+          </p>
+          <p className="hidden lg:block font-caveat text-[40px] leading-[140%] font-bold text-[#B3B3B3] ">
+            CRAFTING <br /> <span className="text-[#FAFAFA]">EXPERIENCES </span>
+            THAT <br /> CONVERT <span className="text-[#FAFAFA]">BUSINESSES</span>
+          </p>
+          <div className="flex gap-4 items-center mt-2.5 lg:hidden">
+            <ResumeIcon />
+            <LinkedinIcon />
+            <GithubIcon />
+          </div>
+          <div className="hidden lg:flex gap-4 items-center mt-2.5">
+            <ResumeIcon size="40" />
+            <LinkedinIcon size="35" />
+            <GithubIcon size="35" />
+          </div>
+        </div>
       </div>
+
     </div>
   );
 };
