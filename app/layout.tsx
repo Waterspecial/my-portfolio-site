@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { satoshi, tektur, oswald, caveat, impact } from "./fonts"
+import { tektur, oswald, caveat, impact, lora } from "./fonts"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        className={`${satoshi.variable} ${tektur.variable} ${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${caveat.variable} ${impact.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} ${tektur.variable} ${oswald.variable} ${caveat.variable} ${impact.variable} ${lora.variable} antialiased `}
       >
         {children}
       </body>

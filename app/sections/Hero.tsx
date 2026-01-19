@@ -9,7 +9,7 @@ import { LinkedinIcon } from "../icons/LinkedinIcon";
 
 export const Hero = () => {
   return (
-    <div className="font-satoshi mx-auto px-6 lg:px-10 pb-9 mt-8 lg:max-w-[1440px] lg:mt-[66px] lg:pb-[157px] lg:flex">
+    <div id="header" className="font-lora mx-auto px-6 lg:px-10 pb-9 pt-8 lg:max-w-[1440px] lg:pt-[66px] lg:pb-[157px] lg:flex">
       
       <div className="lg:pl-12">
         <h3 className="text-[64px] lg:text-[190px] leading-[120%] font-oswald text-[#FAFAFA]">

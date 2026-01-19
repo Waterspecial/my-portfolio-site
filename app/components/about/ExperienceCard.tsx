@@ -1,20 +1,13 @@
 interface ExperienceCardProps {
-  companyName: string;
+  summary: string;
   year: string;
-  role: string;
-  summary?: string;
 }
 
-export const ExperienceCard = ({companyName,year, role, summary }: ExperienceCardProps) => {
-
+export const ExperienceCard = ({ year, summary }: ExperienceCardProps) => {
   return (
-    <div className="p-6">
-      <div className="flex justify-between items-center mb-10 font-medium">
-        <p>{companyName}</p>
-        <p>{year}</p>
-      </div>
-      <div className="text-sm">{role}</div>
-      {summary && <div className="mt-4 text-sm text-[#FFFFFF]">{summary}</div>}
+    <div className="px-3 py-1 lg:text-[24px] text-[#E6E6E6] lg:mt-10 lg:space-y-1.5">
+      <p className="font-semibold">{summary}</p>
+      <div className="text-sm lg:text-[20px] font-medium">{year}</div>
     </div>
   );
 };
