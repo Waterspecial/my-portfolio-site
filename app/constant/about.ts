@@ -1,24 +1,16 @@
 export const experiences = [
   {
-    companyName: "GOOGLE",
+    summary: "Software Engineer at Google",
     year: "2020 - 2022",
-    role: "Software Engineer",
-    summary:
-      "Led a team of developers in the delivery of different activities relating to the advance in technological systems at Microsoft",
+
   },
   {
-    companyName: "APPLE",
+    summary: "Frontend Developer at APPLE",
     year: "2018 - 2020",
-    role: "Frontend Developer",
-    summary:
-      "Led a team of developers in the delivery of different activities relating to the advance in technological systems at Microsoft",
   },
   {
-    companyName: "IBM",
+    summary: "Backend Developer at IBM",
     year: "2015 - 2017",
-    role: "Backend Developer",
-    summary:
-      "Led a team of developers in the delivery of different activities relating to the advance in technological systems at Microsoft",
   },
 ];
   
@@ -32,5 +24,32 @@ export const experiences = [
       course: "BSc Computer Engineering",
       year: "2017 - 2023",
       institution: "Obafemi Awolowo University",
+    },
+  ];
+
+  export const projectImages = [
+    {
+      id: 1,
+      src: "/images/Project1.webp",
+      title: "MYNOOX.COM",
+      alt: "Project 1",
+    },
+    {
+      id: 2,
+      src: "/images/Project2.webp",
+      title: "WWW.ESEMIE.COM",
+      alt: "Project 2",
+    },
+    {
+      id: 3,
+      src: "/images/Project3.webp",
+      title: "WWW.ALLVIUM.NET",
+      alt: "Project 3",
+    },
+    {
+      id: 4,
+      src: "/images/Project4.webp",
+      title: "CUBACLE.VERCEL.APP",
+      alt: "Project 4",
     },
   ];

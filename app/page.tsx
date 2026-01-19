@@ -6,12 +6,14 @@ import { Contact } from "./sections/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-satsohi">
-      <div className="bg-hero-custom">
+    <div className="min-h-screen scroll-smooth transition-colors duration-500">
         <Navbar />
+      <div className="bg-hero-custom">
         <Hero />
       </div>
-      <Project />
+      <div className="scroll-smooth ">
+        <Project />
+      </div>
       <About />
       <Contact />
     </div>
