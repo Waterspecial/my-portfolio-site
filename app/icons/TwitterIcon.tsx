@@ -1,7 +1,7 @@
 
 const TwitterIcon = ({ size = "30" }: { size?: string }) => {
   return (
-    <>
+    <div className="cursor-pointer hover:scale-110 transition-transform duration-300">
       <svg
         width={size}
         height={size}
@@ -24,7 +24,7 @@ const TwitterIcon = ({ size = "30" }: { size?: string }) => {
           </clipPath>
         </defs>
       </svg>
-    </>
+    </div>
   );
 };
 

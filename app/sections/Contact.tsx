@@ -60,8 +60,8 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="bg-project font-lora">
-      <div className="max-w-360 mx-auto pt-13">
-        <h1 className="text-[100px] lg:text-[200px] text-[#F3F3F3] font-impact lg:hidden">
+      <div className="pt-13">
+        <h1 className="text-[100px] text-[#F3F3F3] font-impact lg:hidden">
           reach out!
         </h1>
 
@@ -72,7 +72,8 @@ export const Contact = () => {
             <h4>reach out!</h4>
             <h4>Let&apos;s connect and work together...</h4>
           </div>
-        </div>
+        </div>|
+
         <div className="flex gap-8 py-6 items-center justify-center my-5 lg:hidden">
           <ResumeIcon size="30" />
           <LinkedinIcon size="30" />
