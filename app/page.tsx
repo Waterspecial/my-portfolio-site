@@ -6,8 +6,8 @@ import { Contact } from "./sections/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen scroll-smooth transition-colors duration-500">
-        <Navbar />
+    <div className="min-h-screen">
+      <Navbar />
       <div className="bg-hero-custom">
         <Hero />
       </div>

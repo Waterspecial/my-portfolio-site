@@ -10,7 +10,7 @@ import { LinkedinIcon } from "../icons/LinkedinIcon";
 export const About = () => {
   return (
     <section id="about" className="bg-about font-lora">
-      <div className="px-6 py-8 max-w-[1440px] mx-auto lg:px-[52px] lg:py-12">
+      <div className="px-6 py-8 max-w-360 mx-auto lg:px-13 lg:py-12">
         <h3 className="font-tektur font-semibold text-2xl lg:text-[40px] text-[#E6E6E6] mb-8 lg:px-3">
           About me
         </h3>
