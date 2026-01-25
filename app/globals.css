@@ -107,7 +107,3 @@ body {
   will-change: transform;
 
 }
-
-.split * {
-  will-change: transform;
-}
