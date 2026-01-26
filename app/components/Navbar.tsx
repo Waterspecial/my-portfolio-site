@@ -49,7 +49,7 @@ export const Navbar = () => {
     >
       <div className="px-6 py-1 flex justify-between relative md:max-w-[1440px] items-center lg:mx-auto md:pt-[13px] md:pb-[19px] font-lora">
         {/* Logo */}
-        <div className="font-semimedium text-2xl md:text-3xl text-[#828282] hover:text-[#E6E6E6] py-2.5 px-3 md:px-6 cursor-pointer">
+        <div className="font-semimedium text-2xl md:text-3xl text-[#E6E6E6] py-2.5 px-3 md:px-6 cursor-pointer">
           <a href="#header">Omirinde</a>
         </div>
 

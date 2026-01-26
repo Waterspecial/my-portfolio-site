@@ -1,5 +1,8 @@
 "use client";
 import Image from "next/image";
+import { motion, useMotionValue, useSpring } from "framer-motion";
+import React, { useState } from "react";
+import { LInkIcon } from "@/app/icons/LInkIcon";
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -7,19 +10,69 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ imageSrc, title }: ProjectCardProps) {
+  const [hovered, setHovered] = useState(false);
+
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const smoothX = useSpring(mouseX, { stiffness: 300, damping: 35 });
+  const smoothY = useSpring(mouseY, { stiffness: 300, damping: 35 });
+  
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left - 40);
+    mouseY.set(e.clientY - rect.top - 40);
+  };
+
+
   return (
-    <div className=" w-full max-w-[500px] md:w-[calc(50%-1rem)] lg:max-w-[656px]">
+    <motion.div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onMouseMove={handleMouseMove}
+      className={`relative w-full max-w-125 md:w-[calc(50%-1rem)] lg:max-w-164 `}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{ y: -6 }}
+    >
+      {hovered && (
+        <motion.div
+          className="absolute z-20 flex items-center justify-center rounded-full bg-[#EDEDED] text-black font-semibold text-[16px] cursor-pointer"
+          style={{
+            left: smoothX,
+            top: smoothY,
+            width: 80,
+            height: 80,
+            transform: "translate(-50%, -50%)",
+          }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0, opacity: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+        >
+        
+        </motion.div>
+      )}
+
       {/* Image */}
-      <div className="bg-[#000000] w-full border-t-[1.5px] border-[#1A1A1A] rounded-t-[20px] pt-[92px] lg:pt-[120px] px-8 lg:px-[38px]">
-        <div className="relative w-full h-40 lg:h-[275px]">
+      <div className="bg-black w-full border-t-[1.5px] border-[#1A1A1A] rounded-t-[12px] pt-23 px-8 lg:px-9.5 overflow-hidden">
+        <motion.div
+          className="relative w-full h-40 lg:h-68.75"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          style={{
+            x: smoothX.get() * -0.003,
+            y: smoothY.get() * -0.003,
+          }}
+        >
           <Image
             src={imageSrc}
             alt={title}
-            // height={500}
             fill
-            className="object-cover rounded-t-2xl transition-transform duration-300 hover:scale-105"
+            className="object-cover rounded-t-2xl"
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Footer */}
@@ -28,6 +81,6 @@ export default function ProjectCard({ imageSrc, title }: ProjectCardProps) {
           {title}
         </h3>
       </div>
-    </div>
+    </motion.div>
   );
 }
