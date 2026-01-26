@@ -1,17 +1,36 @@
+"use client";
+
+
 import ProjectCard from "../components/project/ProjectCard";
 import { projectImages } from "../constant/about";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
 
 export const Project = () => {
 
 
   return (
     <section id="projects" className="bg-project">
-      <div className="max-w-[1440px] mx-auto pb-8 lg:py-[100px] lg:px-[52px]">
-        <h3 className="text-2xl lg:text-[40px] font-tektur font-light lg:font-medium py-8 px-6">
+      <div className="max-w-360 mx-auto pb-8 lg:py-25 lg:px-13">
+        <h3 className="text-2xl lg:text-[48px] font-tektur font-light lg:font-medium py-8 px-6">
           Selected projects
         </h3>
 
-        <div className="px-6 space-y-5 w-full lg:flex flex-wrap gap-6">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="px-6 space-y-5 w-full lg:flex flex-wrap gap-6"
+        >
           {projectImages.map((projectImage) => (
             <ProjectCard
               key={projectImage.id}
@@ -19,7 +38,7 @@ export const Project = () => {
               title={projectImage.title}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
