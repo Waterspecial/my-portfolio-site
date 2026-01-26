@@ -85,21 +85,21 @@ export const Hero = () => {
         </div>
 
         <div className="flex justify-end w-full">
-          <div
-           onMouseEnter={textEnter}
-           onMouseLeave={textLeave}
-          className="py-2.5 lg:py-10 lg:pr-6">
-            <p className="font-caveat text-[24px] leading-[140%] font-bold text-[#B3B3B3] lg:hidden">
-              CRAFTING <span className="text-[#FAFAFA]">EXPERIENCES</span>{" "}
-              <br /> THAT CONVERT{" "}
-              <span className="text-[#FAFAFA]">BUSINESSES</span>
-            </p>
-            <p className="hidden lg:block font-caveat text-[40px] leading-[140%] font-bold text-[#B3B3B3] ">
-              CRAFTING <br />{" "}
-              <span className="text-[#FAFAFA]">EXPERIENCES </span>
-              THAT <br /> CONVERT{" "}
-              <span className="text-[#FAFAFA]">BUSINESSES</span>
-            </p>
+          <div className="py-2.5 lg:py-10 lg:pr-6">
+            <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <p className="font-caveat text-[24px] leading-[140%] font-bold text-[#B3B3B3] lg:hidden">
+                CRAFTING <span className="text-[#FAFAFA]">EXPERIENCES</span>{" "}
+                <br /> THAT CONVERT{" "}
+                <span className="text-[#FAFAFA]">BUSINESSES</span>
+              </p>
+              <p className="hidden lg:block font-caveat text-[40px] leading-[140%] font-bold text-[#B3B3B3] ">
+                CRAFTING <br />{" "}
+                <span className="text-[#FAFAFA]">EXPERIENCES </span>
+                THAT <br /> CONVERT{" "}
+                <span className="text-[#FAFAFA]">BUSINESSES</span>
+              </p>
+            </div>
+
             <div className="flex gap-4 items-center mt-2.5 lg:hidden">
               <ResumeIcon />
               <LinkedinIcon />
@@ -113,7 +113,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <Typewriter/>
+      <Typewriter />
 
       {/* {isHoveringHero && ( */}
       <motion.div
