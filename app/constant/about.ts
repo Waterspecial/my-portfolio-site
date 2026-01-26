@@ -52,4 +52,16 @@ export const experiences = [
       title: "CUBACLE.VERCEL.APP",
       alt: "Project 4",
     },
+    {
+      id: 2,
+      src: "/images/Project2.webp",
+      title: "WWW.ESEMIE.COM",
+      alt: "Project 2",
+    },
+    {
+      id: 3,
+      src: "/images/Project3.webp",
+      title: "WWW.ALLVIUM.NET",
+      alt: "Project 3",
+    },
   ];

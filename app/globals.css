@@ -105,5 +105,15 @@ body {
 
 .split {
   will-change: transform;
+}
 
+.cursor {
+ background-color: #FFFFFF;
+ height: 32px;
+ width: 32px;
+ border-radius: 50%;
+ position: fixed;
+ top: 0;
+  left: 0;
+  pointer-events: none;
 }
